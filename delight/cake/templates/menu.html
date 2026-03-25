@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- menu page starts -->
+<div class="container-fluid mt-3 bg-cream">
+        <div class="row">
+            <div class="col">
+                <h2  class="mt-3" style="text-align: center;">What's In Menu</h2>
+            </div>
+        </div>
+   
+        <div class="container">
+          <div class="row">
+          
+            <div class="col-lg-4">
+              <div class="menu-container">
+                <div class="menu-item">
+                  <div class="menu-img">
+                      <a href="{% url 'product_list' 'Cake' %}">
+                        <img src=" {% static "image/carrot cake.jpg" %}" alt="">
+                      </a>
+                <p>Cakes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="menu-container">
+                <div class="menu-item">
+                  <div class="menu-img">
+                      <a href="{% url 'product_list' 'Drink' %}">
+                        <img src=" {% static "image/shake4.jpg" %}" alt="">
+                      </a>
+                <p>Shakes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="menu-container">
+                <div class="menu-item">
+                  <div class="menu-img">
+                      <a href="{% url 'product_list' 'Snacks' %}">
+                        <img src=" {% static "image/donut.png" %}" alt="">
+                      </a>
+                <p>Snacks</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+
+{% endblock content %}

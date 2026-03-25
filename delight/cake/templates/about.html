@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- about page starts -->
+    <div class="container-fluid mt-3 bg-cream">
+      <div class="row">
+        <div class="col-">
+          <h2  class="mt-3" style="text-align: center;">About Us</h2>
+        </div>
+      </div>
+      <div class="row" style="text-align: center;" >
+        <div class="col-lg-4 col-md-6">
+          <img src="{% static 'image/baba.jpg' %}" alt="cake image" width="300" height="300" class="mb-4 ms-2">
+        </div>
+        <div class="col-lg-8 col-md-6 mt-5about " >
+          <p >At <b> Delight</b>, we believe every bite should tell a story of pure happiness.</p>
+          <p>Our handcrafted cakes and rich, fudgy brownies are made with the finest ingredients and a passion for perfection.
+          From classic favorites to creative flavors, each treat is baked fresh to make your moments extra special.</p>
+          <p>Indulge in the timeless taste of delight where sweetness meets perfection in every slice
+          Because at Timeless Delight, every creation is made to celebrate life’s sweetest moments.</p>
+          <p><b>Your Cravings, Our Creations.</b></p>
+        </div>
+      </div>
+    </div>
+     <!-- about page ends -->
+    <!-- benefits start-->
+     <section class="benefits-section bg-cream">
+       <h2>Benefits of Our Shop</h2>
+      <p class="subtitle">
+     Enjoy freshly baked cakes made with premium ingredients and crafted for every celebration.
+    </p>
+        <div class="benefits-container">
+          <div class="row">
+            <div class="col-6">
+              <div class="benefit-card">
+                <h4>Fresh Ingredients</h4>
+                <p>Made with high-quality, fresh ingredients.</p>
+                
+              </div>
+            </div>
+
+            <div class="col-6">
+                <div class="benefit-card">
+                <h4>Rich Taste</h4>
+                <p> Soft, fluffy cakes packed with rich flavor.</p>
+                </div>
+
+            </div>
+          </div>
+          <!-- row2 -->
+           <div class="row">
+            <div class="col-6">
+              <div class="benefit-card">
+                <h4> Choices</h4>
+              <p> A wide variety of flavors for every taste.</p>
+              </div>
+            </div>
+
+            
+            <div class="col-6">
+             <div class="benefit-card">
+              <h4>Value for Money</h4>
+              <p>Premium cakes at affordable prices.</p>
+            </div>
+           </div>
+
+            </div>
+
+
+
+            </div>
+          
+     
+     </section>
+    <!-- benefits ends -->
+     {% endblock content %}
